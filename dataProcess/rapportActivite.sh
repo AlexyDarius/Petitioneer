@@ -7,9 +7,9 @@ read input
 BASEDIR=$(dirname $0)
 
 if [ $input == "R" ]; then
-  python3 $BASEDIR/rapportVille.py &
+  python3 $BASEDIR/src/rapportActivite.py &
 elif [ $input == "D" ]; then
-  python3 $BASEDIR/rapportVille_demo.py &
+  python3 $BASEDIR/src/rapportActivite_demo.py &
 else
   echo "Invalid input"
 fi
