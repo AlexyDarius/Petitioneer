@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.7
+- https://www.phpmyadmin.net
+-
+- Hôte : localhost:3306
+- Généré le : ven. 10 fév. 2023 à 09:39
+- Version du serveur :  10.3.37-MariaDB-log-cll-lve
+- Version de PHP : 7.4.30
+-->
+
+<pma_xml_export version="1.0">
+    <!--
+    - Base de données : 'furiehul_petition'
+    -->
+    <database name="furiehul_petition">
+        <!-- Table users2 -->
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 00:00:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 09:07:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-11 01:07:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-11 01:08:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 14:07:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 16:07:00</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 09:08:37</column>
+        </table>
+        <table name="users2">
+            <column name="date">2023-02-10 09:11:21</column>
+        </table>
+    </database>
+</pma_xml_export>
