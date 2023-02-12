@@ -14,14 +14,14 @@ function sendmail($email,$token,$prenom,$verifyLink){
 
     try {
         $mail->isSMTP();                                    
-        $mail->Host = 'smtp-mail.outlook.com';
+        $mail->Host = '****';
         $mail->SMTPAuth = true;                        
-        $mail->Username = 'furiepetition1@outlook.fr';        
-        $mail->Password = 'furie1999bruel';                        
+        $mail->Username = '****';        
+        $mail->Password = '****';                        
         $mail->SMTPSecure = 'tls';                         
         $mail->Port = 587;                          
 
-        $mail->setFrom('furiepetition1@outlook.fr', 'Furie Francaise');
+        $mail->setFrom('****', 'Furie Francaise');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Validez votre signature de petition';
