@@ -107,9 +107,13 @@ def main():
 
     #processing
     dates_and_hours = parse_dates_and_hours(file)
+    print("dates"+dates_and_hours)
     grouped_dates_and_hours = group_by_hour(dates_and_hours)
+    print("grouped"+grouped_dates_and_hours)
     sorted_dates_and_hours = sort_by_date(grouped_dates_and_hours)
+    print("sorted"+sorted_dates_and_hours)
     utc_dates_and_hours = utc(sorted_dates_and_hours)
+    print("utc"+utc_dates_and_hours)
     summed_dates_and_hours = sum_y_values(utc_dates_and_hours)
     x_values, y_values = extract_xy_values(summed_dates_and_hours)
 

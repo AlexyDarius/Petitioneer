@@ -1,0 +1,2 @@
+set connectDB
+set connectMail

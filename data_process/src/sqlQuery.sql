@@ -2,7 +2,7 @@
 
 CREATE TABLE `users2`(
     `id` INT(11) NOT NULL AUTO_INCREMENT,
-    `roman` VARCHAR(100) NOT NULL,
+    `nom` VARCHAR(100) NOT NULL,
     `prenom` VARCHAR(100) NOT NULL,
     `email` VARCHAR(100) NOT NULL,
     `ville` VARCHAR(100) DEFAULT NULL,
@@ -47,3 +47,14 @@ FROM
     users2
 WHERE
     verified = 1;
+
+////////////////////////////
+
+//get Petition
+
+SELECT
+    nom,prenom,ville
+FROM
+    users2
+WHERE 
+    verifided =1;

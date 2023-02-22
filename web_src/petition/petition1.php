@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 
-<?php include $_SERVER['DOCUMENT_ROOT']. '/pwd/connectDBPetition.php'?>
-<?php include $_SERVER['DOCUMENT_ROOT']. '/data/petitiondragData.php'?>
-<?php require $_SERVER['DOCUMENT_ROOT']. '/DariusDev/petition/form.php'?>
-<?php include $_SERVER['DOCUMENT_ROOT']. '/DariusDev/petition/compteur.php'?>
+<?php 
 
-<?php
-require $_SERVER['DOCUMENT_ROOT']. "/php/header.php";
+require $_SERVER['DOCUMENT_ROOT']. '/pwd/connectDBPetition.php';
+require $_SERVER['DOCUMENT_ROOT']. '/data/petition1_data.php';
+include $_SERVER['DOCUMENT_ROOT']. '/DariusDev/petition/form.php';
+include $_SERVER['DOCUMENT_ROOT']. '/DariusDev/petition/compteur.php';
+
 ?>
-    <title>Furie Française - Pétiton lectures drag</title>
-    <meta name="description" content="Signez notre pétition contre les lectures drags financées par la mairie de Toulouse !">
-    <link rel="canonical" href="https://www.furiefrancaise.fr/petitiondrag">
+
+<head>
+  <link rel="stylesheet" href="https://alexyroman.online/bootstrap/css/bootstrap.css">
+  <title>Pétition</title>
 </head>
 
 <body style="background: var(--bs-gray-900);">
-    
-<?php
-require $_SERVER['DOCUMENT_ROOT']. "/php/navbar-site.php";
-?>
 
 <div style="margin-top: 20px;">
   <p class="text-center" style="color: var(--bs-white);font-weight: bold;font-size: 28px;"><?php echo $message ?></p>
 </div>
 
-<div class="container" style="color: var(--bs-white);margin-top: 20px;margin-bottom: 0;font-family: 'Advent Pro', sans-serif;">
+<div class="container" style="color: var(--bs-white);margin-top: 20px;margin-bottom: 0">
 <div class="row">
 <div class="col-md-12">
   <section class="position-relative py-4 py-xl-5">
   <div class="container position-relative">
   <div class="row">
   <div class="col-md-8 col-xl-6 text-center mx-auto">
-    <h1 style="color: var(--bs-white);font-weight: bold;font-size: 28px;">Signez notre pétition contre les lectures drag aux 3-6 ans à Toulouse !</h1>
-    <img class="img-fluid" src="/img/drag.jpg">
-    <p class="w-lg-50">Toi aussi tu en as marre de ces dégénerés ? Signe ici&nbsp;</p>
+    <h1 style="color: var(--bs-white);font-weight: bold;font-size: 28px;">Signez notre pétition !</h1>
+    <img class="img-fluid" src="/">
+    <p class="w-lg-50">Text</p>
   </div>
   </div>
     <div class="row d-flex justify-content-center">
@@ -42,7 +39,7 @@ require $_SERVER['DOCUMENT_ROOT']. "/php/navbar-site.php";
       <div class="card-body p-sm-5">
         <h2 class="text-center mb-4" style="color: var(--bs-black);">Signez ici:</h2>
                                             
-        <form action="petitiondrag.php" method="post">
+        <form action="petition1.php" method="post">
           <div class="form-group">
             <label style="color: var(--bs-black)">Nom</label>
             <input type="text" name="nom" class="form-control form-control-lg" placeholder="Nom" value="<?php echo $nom; ?>">
@@ -91,7 +88,3 @@ require $_SERVER['DOCUMENT_ROOT']. "/php/navbar-site.php";
 </div>
 </div>
 </div>
-
-<?php
-require $_SERVER['DOCUMENT_ROOT']. "/php/footer.php";
-?>

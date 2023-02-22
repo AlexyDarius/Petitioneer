@@ -24,13 +24,13 @@ if (isset($_POST['signup-btn'])) {
     $token = bin2hex(random_bytes(50));
 
     // Check if email already exists
-    $sql = "SELECT * FROM $dbTable WHERE email='$email' LIMIT 1";
+    $sql = "SELECT * FROM test WHERE email='$email' LIMIT 1";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         $message = 'Pétition déjà signée';
     }
     else {
-    $query = "INSERT INTO $dbTable SET nom=?, prenom=?, email=?, ville=?, age=?, commentaire=?, token=?";
+    $query = "INSERT INTO test SET nom=?, prenom=?, email=?, ville=?, age=?, commentaire=?, token=?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param('sssssss', $nom, $prenom, $email, $ville, $age, $commentaire, $token);
     $result = $stmt->execute();
@@ -39,7 +39,7 @@ if (isset($_POST['signup-btn'])) {
         $user_id = $stmt->insert_id;
         $stmt->close();
 
-        sendmail($email, $token, $prenom,$verifyLink);
+        sendmail($email, $token, $prenom);
         $message = "Signature enregistrée, consultez vos mails pour la valider.";
 
     } else {
